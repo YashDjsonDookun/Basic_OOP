@@ -1,5 +1,4 @@
 #!/usr/share/python3
-
 class Vehicle:
     hornSound = "Basic Vehicle Horn"
 
@@ -38,8 +37,12 @@ class Automobile(Vehicle):
     def CloseDoors(self):
         print("Doors Closed!")
 
-automobile = Automobile("Honda", "Fit", "Black", 2011, 69699, 4, "Car")
-automobile.DisplayAutomobileAttributes()
-automobile.Horn(Automobile.hornSound)
-automobile.OpenDoors()
-automobile.CloseDoors()
+def main():
+    automobile = Automobile("Honda", "Fit", "Black", 2011, 69699, 4, "Car")
+    automobile.DisplayAutomobileAttributes()
+    automobile.Horn(Automobile.hornSound)
+    automobile.OpenDoors()
+    automobile.CloseDoors()
+
+if __name__ == "__main__":
+    main()
