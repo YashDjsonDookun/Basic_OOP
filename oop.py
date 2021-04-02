@@ -1,7 +1,7 @@
 #!/usr/share/python3
 
 class Vehicle:
-    honkSound = "Basic Vehicle Horn"
+    hornSound = "Basic Vehicle Horn"
 
     def __init__(self, make, model, color, year, mileage):
             self.make = make
@@ -10,11 +10,11 @@ class Vehicle:
             self.year = year
             self.mileage = mileage
 
-    def Honk(self, honkSound):
-        print(f"Honk: {honkSound}")
+    def Horn(self, hornSound):
+        print(f"Horn: {hornSound}")
 
 class Automobile(Vehicle):
-    honkSound = "Pimp Pimp!!!"
+    hornSound = "Pimp Pimp!!!"
 
     def __init__(self, make, model, color, year, mileage, numberOfWheels, typeOfAutomobile):
         # inherit attributes from Vehicle Superclass
@@ -40,6 +40,6 @@ class Automobile(Vehicle):
 
 automobile = Automobile("Honda", "Fit", "Black", 2011, 69699, 4, "Car")
 automobile.DisplayAutomobileAttributes()
-automobile.Honk(Automobile.honkSound)
+automobile.Horn(Automobile.hornSound)
 automobile.OpenDoors()
 automobile.CloseDoors()
